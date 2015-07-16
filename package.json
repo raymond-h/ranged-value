@@ -1,7 +1,7 @@
 {
   "name": "ranged-value",
   "description": "Simple class for values with a min and max (like HP in videogames)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/index.js",
   "author": "Raymond Hammarling",
