@@ -23,16 +23,16 @@ hp.current -= 10;
 // priest heal!
 hp.current += 20;
 
-if(hp.full()) console.log('I feel really good!');
+if(hp.full) console.log('I feel really good!');
 
 // wow, this guy punches really hard!!
 hp.current -= 500;
 
-if(hp.empty()) console.log('Oh no, I am dead!');
+if(hp.empty) console.log('Oh no, I am dead!');
 
 hp.percent = 0.7;
 
-if(!hp.empty()) console.log('I have been resurrected, with ' + hp.percent * 100 + '% HP!');
+if(!hp.empty) console.log('I have been resurrected, with ' + hp.percent * 100 + '% HP!');
 
 JSON.stringify(hp); // {"min": 0, "current": 14, "max": 20}
 ```

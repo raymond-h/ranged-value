@@ -24,8 +24,8 @@ module.exports = class RangedValue
 					@_current = (@max - @min) * (percentToFactor v) + @min
 					@bound()
 
-	empty: -> @_current <= @min
-	full: -> @_current >= @max
+			'empty': get: => @_current <= @min
+			'full': get: => @_current >= @max
 
 	bound: ->
 		@_current = Math.max @min, Math.min @_current, @max
