@@ -1,30 +1,25 @@
 {
-	"name": "ranged-value",
-	"description": "Simple class for values with a min and max (like HP in videogames)",
-	"version": "0.0.0",
-	"license": "MIT",
-	"main": "lib/index.js",
-	"author": "Raymond Hammarling",
-	"scripts": {
-
-		"lint": "coffeelint src/ test/",
-		"test": "mocha --compilers coffee:coffee-script/register test/",
-		"build": "coffee -c -o lib/ src/",
-
-
-		"pretest": "npm run lint",
-		"prebuild": "npm run test",
-		"watch": "onchange src/ -- npm run build && echo Done",
-		"dev": "npm run watch",
-		"prepublish": "npm run build"
-	},
-	"devDependencies": {
-
-		"coffee-script": "latest",
-		"coffeelint": "latest",
-
-		"mocha": "latest",
-		"chai": "latest",
-		"onchange": "latest"
-	}
+  "name": "ranged-value",
+  "description": "Simple class for values with a min and max (like HP in videogames)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "author": "Raymond Hammarling",
+  "scripts": {
+    "lint": "coffeelint src/ test/",
+    "test": "mocha --compilers coffee:coffee-script/register test/",
+    "build": "coffee -c -o lib/ src/",
+    "pretest": "npm run lint",
+    "prebuild": "npm run test",
+    "watch": "onchange src/ -- npm run build && echo Done",
+    "dev": "npm run watch",
+    "prepublish": "npm run build"
+  },
+  "devDependencies": {
+    "coffee-script": "latest",
+    "coffeelint": "latest",
+    "mocha": "latest",
+    "chai": "latest",
+    "onchange": "latest"
+  }
 }
